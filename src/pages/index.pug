@@ -1,0 +1,22 @@
+doctype html
+html
+    head
+        include includes/head.pug
+    body
+        header.main-header
+            nav.main-header__wrap.container
+                a.main-header__logo(href='#')
+                    img.main-header__logo-img(src='img/logo.png', alt='Logo')
+                ul.main-header__nav.nav-site
+                    li.nav-site__item
+                        a(href='#') Catalog
+                    li.nav-site__item
+                        a(href='#') Knitting to order
+                ul.main-header__nav.nav-user
+                    li.nav-user__item.nav-user__item--search
+                        a(href='#') Search
+                    li.nav-user__item.nav-user__item--card
+                        a(href='#') Cart: empty yet
+                a.main-header__link(href='#') Free shipping
+        include includes/foot.pug
+        script(src="/js/main.min.js")

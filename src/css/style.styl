@@ -1,0 +1,134 @@
+@import "./normalize.css"
+
+*
+  box-sizing: border-box
+
+html,
+body
+  margin: 0
+  padding: 0
+
+body
+  font: 100% normal Areal, sans-serif
+
+img
+  vertical-align: bottom
+
+a
+  color: inherit
+  text-decoration: none
+
+.container
+  position: relative
+  margin: 0 auto
+  padding: 12px
+  max-width: 1100px
+
+.main-header
+  background: #333
+
+.main-header__wrap
+  position: relative
+  display: flex
+  align-items: center
+  padding: 12px
+
+.main-header__logo
+  display: inline-block
+  width: 42px
+  height: 42px
+  border-radius: 50%
+  background-color: #222
+
+.main-header__logo .main-header__logo-img
+  width: auto
+  height: 100%
+
+.main-header__nav
+  margin: 0
+  padding: 0
+  list-style: none
+  display: flex
+
+.nav-site
+  margin-left: 24px
+  margin-right: auto
+
+.nav-site .nav-site__item
+  margin-left: 4px
+  border-radius: 4px
+  overflow: hidden
+
+.nav-site .nav-site__item a
+  display: block
+  padding: 12px
+  background: rgba(0, 0, 0, 0.5)
+  color: #eee
+
+.nav-site .nav-site__item:first-child
+  margin-left: 0
+
+.nav-site .nav-site__item:hover
+  position: relative
+
+.nav-site .nav-site__item:hover::before
+  content: ''
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+  height: 2px
+  background-color: #eee
+
+.nav-user
+  margin-left: auto
+
+.nav-user .nav-user__item
+  position: relative
+  margin-left: 4px
+  padding-left: 1em
+
+.nav-user .nav-user__item a
+  display: block
+  padding: 12px
+  background: #787878
+  color: #fff
+  border-radius: 4px
+
+.nav-user .nav-user__item:first-child
+  margin-left: 0
+
+.nav-user .nav-user__item::before
+  content: ''
+  display: block
+  position: absolute
+  top: 12px
+  left: 0.5em
+  width: 1em
+  height: 1em
+  background-color: #787878
+  border-radius: 50%
+
+.nav-user .nav-user__item--search:hover::before
+  background-color: rebeccapurple
+
+.nav-user .nav-user__item--card:hover::before
+  background-color: yellowgreen
+
+.main-header__link
+  position: absolute
+  bottom: -42px
+  right: 0
+  display: block
+  padding: 12px
+
+main
+  padding-top: 2em
+  min-height calc(100vh - 42px - 24px - 200px)
+  background-color #eee
+
+footer
+  min-height 200px
+  background-color #333
+  color: #ffffff
+
